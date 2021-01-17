@@ -1,0 +1,2 @@
+# FanartKit
+Fanart API
