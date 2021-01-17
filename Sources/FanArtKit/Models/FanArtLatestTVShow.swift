@@ -1,7 +1,7 @@
 import Foundation
 
 public struct FanArtLatestTVShow: Codable {
-    let id, name, newImages, totalImages: String?
+    public let id, name, newImages, totalImages: String?
 
     enum CodingKeys: String, CodingKey {
         case id, name

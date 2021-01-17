@@ -3,10 +3,10 @@ import Foundation
 
 // MARK: - FanArtTVShow
 public struct FanArtTVShow: Codable {
-    let name, thetvdbID: String?
-    let clearlogo, hdtvlogo, clearart, showbackground: [Characterart]?
-    let tvthumb, seasonposter, seasonthumb, hdclearart: [Characterart]?
-    let tvbanner, characterart, tvposter, seasonbanner: [Characterart]?
+    public let name, thetvdbID: String?
+    public let clearlogo, hdtvlogo, clearart, showbackground: [Characterart]?
+    public let tvthumb, seasonposter, seasonthumb, hdclearart: [Characterart]?
+    public let tvbanner, characterart, tvposter, seasonbanner: [Characterart]?
 
     enum CodingKeys: String, CodingKey {
         case name

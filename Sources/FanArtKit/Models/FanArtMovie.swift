@@ -1,11 +1,11 @@
 import Foundation
 
 public struct FanArtMovie: Codable {
-    let name, tmdbID, imdbID: String?
-    let hdmovielogo: [Hdmovieclearart]?
-    let moviedisc: [Moviedisc]?
-    let movielogo, movieposter, hdmovieclearart, movieart: [Hdmovieclearart]?
-    let moviebackground, moviebanner, moviethumb: [Hdmovieclearart]?
+    public let name, tmdbID, imdbID: String?
+    public let hdmovielogo: [Hdmovieclearart]?
+    public let moviedisc: [Moviedisc]?
+    public let movielogo, movieposter, hdmovieclearart, movieart: [Hdmovieclearart]?
+    public let moviebackground, moviebanner, moviethumb: [Hdmovieclearart]?
 
     enum CodingKeys: String, CodingKey {
         case name
@@ -16,17 +16,17 @@ public struct FanArtMovie: Codable {
 }
 
 // MARK: - Hdmovieclearart
-struct Hdmovieclearart: Codable {
-    let id: String?
-    let url: String?
-    let lang, likes: String?
+public struct Hdmovieclearart: Codable {
+    public let id: String?
+    public let url: String?
+    public let lang, likes: String?
 }
 
 // MARK: - Moviedisc
-struct Moviedisc: Codable {
-    let id: String?
-    let url: String?
-    let lang, likes, disc, discType: String?
+public struct Moviedisc: Codable {
+    public let id: String?
+    public let url: String?
+    public let lang, likes, disc, discType: String?
 
     enum CodingKeys: String, CodingKey {
         case id, url, lang, likes, disc
