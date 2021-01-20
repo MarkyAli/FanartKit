@@ -17,9 +17,9 @@ public struct FanArtTVShow: Codable {
 
 // MARK: - Characterart
 public struct Characterart: Codable {
-    let id: String?
-    let url: String?
-    let lang: String?
-    let likes: String?
-    let season: String?
+    public let id: String?
+    public let url: String?
+    public let lang: String?
+    public let likes: String?
+    public let season: String?
 }
